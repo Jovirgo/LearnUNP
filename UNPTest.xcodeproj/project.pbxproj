@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17D309DB1ABB1B28008C6A20 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17D309DA1ABB1B28008C6A20 /* main.cpp */; };
+		17DEEB151ADFF73A00BAD9C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17DEEB141ADFF73A00BAD9C7 /* main.cpp */; };
+		17DEEB1A1ADFF7D100BAD9C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17DEEB191ADFF7D100BAD9C7 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		17D309D51ABB1B28008C6A20 /* CopyFiles */ = {
+		17DEEB051ADFF6D800BAD9C7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		17DEEB101ADFF73A00BAD9C7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +33,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		17D309D71ABB1B28008C6A20 /* UNPTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UNPTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		17D309DA1ABB1B28008C6A20 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		17DEEB071ADFF6D800BAD9C7 /* DayTimeTcpCli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DayTimeTcpCli; sourceTree = BUILT_PRODUCTS_DIR; };
+		17DEEB121ADFF73A00BAD9C7 /* DayTimeTcpSrv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DayTimeTcpSrv; sourceTree = BUILT_PRODUCTS_DIR; };
+		17DEEB141ADFF73A00BAD9C7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		17DEEB191ADFF7D100BAD9C7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		17D309D41ABB1B28008C6A20 /* Frameworks */ = {
+		17DEEB041ADFF6D800BAD9C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17DEEB0F1ADFF73A00BAD9C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +60,8 @@
 		17D309CE1ABB1B28008C6A20 = {
 			isa = PBXGroup;
 			children = (
-				17D309D91ABB1B28008C6A20 /* UNPTest */,
+				17DEEB081ADFF6D800BAD9C7 /* DayTimeTcpCli */,
+				17DEEB131ADFF73A00BAD9C7 /* DayTimeTcpSrv */,
 				17D309D81ABB1B28008C6A20 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,37 +69,63 @@
 		17D309D81ABB1B28008C6A20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17D309D71ABB1B28008C6A20 /* UNPTest */,
+				17DEEB071ADFF6D800BAD9C7 /* DayTimeTcpCli */,
+				17DEEB121ADFF73A00BAD9C7 /* DayTimeTcpSrv */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		17D309D91ABB1B28008C6A20 /* UNPTest */ = {
+		17DEEB081ADFF6D800BAD9C7 /* DayTimeTcpCli */ = {
 			isa = PBXGroup;
 			children = (
-				17D309DA1ABB1B28008C6A20 /* main.cpp */,
+				17DEEB191ADFF7D100BAD9C7 /* main.cpp */,
 			);
-			path = UNPTest;
+			path = DayTimeTcpCli;
+			sourceTree = "<group>";
+		};
+		17DEEB131ADFF73A00BAD9C7 /* DayTimeTcpSrv */ = {
+			isa = PBXGroup;
+			children = (
+				17DEEB141ADFF73A00BAD9C7 /* main.cpp */,
+			);
+			path = DayTimeTcpSrv;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		17D309D61ABB1B28008C6A20 /* UNPTest */ = {
+		17DEEB061ADFF6D800BAD9C7 /* DayTimeTcpCli */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17D309DE1ABB1B28008C6A20 /* Build configuration list for PBXNativeTarget "UNPTest" */;
+			buildConfigurationList = 17DEEB0B1ADFF6D800BAD9C7 /* Build configuration list for PBXNativeTarget "DayTimeTcpCli" */;
 			buildPhases = (
-				17D309D31ABB1B28008C6A20 /* Sources */,
-				17D309D41ABB1B28008C6A20 /* Frameworks */,
-				17D309D51ABB1B28008C6A20 /* CopyFiles */,
+				17DEEB031ADFF6D800BAD9C7 /* Sources */,
+				17DEEB041ADFF6D800BAD9C7 /* Frameworks */,
+				17DEEB051ADFF6D800BAD9C7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = UNPTest;
-			productName = UNPTest;
-			productReference = 17D309D71ABB1B28008C6A20 /* UNPTest */;
+			name = DayTimeTcpCli;
+			productName = DayTimeTcpCli;
+			productReference = 17DEEB071ADFF6D800BAD9C7 /* DayTimeTcpCli */;
+			productType = "com.apple.product-type.tool";
+		};
+		17DEEB111ADFF73A00BAD9C7 /* DayTimeTcpSrv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17DEEB161ADFF73A00BAD9C7 /* Build configuration list for PBXNativeTarget "DayTimeTcpSrv" */;
+			buildPhases = (
+				17DEEB0E1ADFF73A00BAD9C7 /* Sources */,
+				17DEEB0F1ADFF73A00BAD9C7 /* Frameworks */,
+				17DEEB101ADFF73A00BAD9C7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DayTimeTcpSrv;
+			productName = DayTimeTcpSrv;
+			productReference = 17DEEB121ADFF73A00BAD9C7 /* DayTimeTcpSrv */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -91,7 +137,10 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = OJO;
 				TargetAttributes = {
-					17D309D61ABB1B28008C6A20 = {
+					17DEEB061ADFF6D800BAD9C7 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					17DEEB111ADFF73A00BAD9C7 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
@@ -108,17 +157,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				17D309D61ABB1B28008C6A20 /* UNPTest */,
+				17DEEB061ADFF6D800BAD9C7 /* DayTimeTcpCli */,
+				17DEEB111ADFF73A00BAD9C7 /* DayTimeTcpSrv */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17D309D31ABB1B28008C6A20 /* Sources */ = {
+		17DEEB031ADFF6D800BAD9C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17D309DB1ABB1B28008C6A20 /* main.cpp in Sources */,
+				17DEEB1A1ADFF7D100BAD9C7 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17DEEB0E1ADFF73A00BAD9C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DEEB151ADFF73A00BAD9C7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,14 +257,36 @@
 			};
 			name = Release;
 		};
-		17D309DF1ABB1B28008C6A20 /* Debug */ = {
+		17DEEB0C1ADFF6D800BAD9C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		17D309E01ABB1B28008C6A20 /* Release */ = {
+		17DEEB0D1ADFF6D800BAD9C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		17DEEB171ADFF73A00BAD9C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		17DEEB181ADFF73A00BAD9C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -225,11 +305,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17D309DE1ABB1B28008C6A20 /* Build configuration list for PBXNativeTarget "UNPTest" */ = {
+		17DEEB0B1ADFF6D800BAD9C7 /* Build configuration list for PBXNativeTarget "DayTimeTcpCli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17D309DF1ABB1B28008C6A20 /* Debug */,
-				17D309E01ABB1B28008C6A20 /* Release */,
+				17DEEB0C1ADFF6D800BAD9C7 /* Debug */,
+				17DEEB0D1ADFF6D800BAD9C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		17DEEB161ADFF73A00BAD9C7 /* Build configuration list for PBXNativeTarget "DayTimeTcpSrv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17DEEB171ADFF73A00BAD9C7 /* Debug */,
+				17DEEB181ADFF73A00BAD9C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
